@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Luas dan Keliling Lingkaran</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                background-color:darkseagreen;
+            }
+        </style>
+        <script>
+            function kelilinglingk(){
+                let kelilinglingk = document.getElementById("hitungkeliling").innerHTML=3.14*2*parseFloat(keliling.value)
+            }
+            function luaslingk(){
+                let luaslingk = document.getElementById("hitungluas").innerHTML=3.14*parseFloat(luas.value)*parseFloat(luas.value)
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>KELILING DAN LUAS LINGKARAN</h1>
+        <hr>
+        <br>
+        <h2>Rumus Keliling dan Luas Lingkaran</h2>
+        <img src="foto/LK.jpg" alt="rumus" width="500px">
+        <br>
+        <h3>"Mari berhitung teman-teman"</h3>
+        Masukkan Nilai Jari-Jari
+        <input type="number" id="keliling" value="">
+        <button onclick="kelilinglingk()">Keliling Lingkaran</button>
+        Keliling Lingkaran : <span id="hitungkeliling"></span>
+        <br>
+        Masukkan Nilai Jari-Jari
+        <input type="number" id="luas" value="">
+        <button onclick="luaslingk()">Luas Lingkaran</button>
+        Luas Lingkaran : <span id="hitungluas"></span>
+        <br>
+    </body>
+</html>

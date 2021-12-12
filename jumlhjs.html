@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Penjumlahan</title>
+        <script>
+            function hasil(){
+                let satu = Number(document.getElementById("bil1").value);
+                let dua = Number(document.getElementById("bil2").value);
+                let tiga = satu + dua;
+                document.getElementById("bil3").value=tiga;
+
+
+            }
+        </script>
+
+    </head>
+    <body>
+        MASUKKAN BILANGAN <input type="number" value="" id="bil1" onchange="hasil()"/>
+        <b>+</b> <input type="number" id="bil2" value="" onchange="hasil()"/>
+        <button onclick="hasil()"> Hasilnya </button> = <input type="number" id="bil3" value=""/>
+    </body>
+</html>

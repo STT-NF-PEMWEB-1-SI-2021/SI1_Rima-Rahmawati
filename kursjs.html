@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Menghitung  Nilai Kurs</title>
+        <script  defer src="fontawesome/js/all.min.js"></script>
+        <style>
+            body{
+                background-color:darkturquoise;
+            }
+        </style>
+        <script>
+            function jadirup(){
+                const idr = 14.650
+                let jadirup = document.getElementById("hitdoll").innerHTML=idr*(dollar.value)
+            }
+        </script>
+    </head>
+    <body> 
+        <i class="fas fa-funnel-dollar fa-4x"></i>
+        MENGHITUNG NILAI KURS DOLLAR KE RUPIAH 
+        <br>
+        <h1>Catatan :</h1>
+        <p>Diketahui bahwa 1$ jika di rupiahkan maka akan bernilai 14.650</p>
+        <h1>Menghitung dollar ke rupiah</h1>
+        <div>USD</div>
+        <input type="number" id="dollar">
+        <button onclick="jadirup()">RUPIAH</button>
+        Nilai Rupiah = <span id="hitdoll"></span>
+        <hr>
+    </body>
+</html>
